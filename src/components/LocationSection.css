@@ -1,0 +1,47 @@
+.location-section {
+    border-top: 1px solid rgb(122, 122, 122);
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.location-container {
+    width: 1300px;
+    display: flex;
+}
+.location-right {
+    flex: 1;
+    margin: 0 2vw;
+}
+.location-left {
+    flex: 1;
+}
+.location-left .map{
+    background-image: url(../../public/images/map.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(122, 122, 122);
+    height: 600px;
+    margin: 0 20px;
+}
+.location-box {
+    border: 1px solid rgb(122, 122, 122);
+    margin: 30px 0;
+    padding: 40px 60px 40px 40px;
+}
+.location-box p {
+    max-width: 250px;
+}
+@media (max-width: 800px) {
+    .location-container {
+        flex-direction: column;
+    }
+    .location-right {
+        order: 1;
+    }
+    .location-left {
+        order: 2;
+    }
+    .location-left .map {
+        height: 400px;
+    }
+}
