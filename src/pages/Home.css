@@ -27,6 +27,7 @@
     .hero-section {
         background-attachment: unset;
         background-size: auto;
+        background-size: 2400px;
     }
 } 
 .hero {
