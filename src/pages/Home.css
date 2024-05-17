@@ -24,7 +24,7 @@
     justify-content: center;
 }
 @supports (-webkit-touch-callout: none) {
-    .hero-sectoin {
+    .hero-section {
         background-attachment: unset;
         background-size: auto;
     }
