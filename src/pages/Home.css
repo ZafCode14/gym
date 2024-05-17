@@ -23,6 +23,12 @@
     flex-direction: column;
     justify-content: center;
 }
+@supports (-webkit-touch-callout: none) {
+    .hero-sectoin {
+        background-attachment: unset;
+        background-size: auto;
+    }
+} 
 .hero {
     margin-left: 10vw;
     max-width: 700px;
@@ -45,12 +51,11 @@
     flex-wrap: wrap;
 }
 .hero-button {
-    padding: 0 30px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 280px;
     flex: 1;
     border-bottom: 1px solid rgb(122, 122, 122);
     border-top: 1px solid rgb(122, 122, 122);
