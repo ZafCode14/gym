@@ -35,28 +35,30 @@ function Home() {
 
     return (
         <main>
-            <div className='hero-section c_w'>
-                <div className='hero'>
-                    <h1 data-animate='slideInLeft' className='animate'>HELPING YOU REACH HIGHER AND <b>ACHIEVE MORE</b></h1>
-                    <p data-animate='slideInRight' className='animate'>Get real results at Zeus with a plan tailored to your needs. Your fitness and health are important to us.</p>
-                    <button data-animate='scale' className='button1 animate'>GET STARTED</button>
-                </div>
-                <div className='hero-buttons-container'>
-                    <Classes
-                    icon={"./images/Wrestling.png"}
-                    title={"CLASSES"}
-                    description={"Lacus duis consectetur elementum pharetra, dictumst dictum nulla adipiscing."}
-                    />
-                    <Classes
-                    icon={"./images/PersonalTrainer.png"}
-                    title={"PERSONAL TRAINING"}
-                    description={"Nulla mi bibendum in quis ac turpis sapien massa. Quam turpis tempus ut dolor."}
-                    />
-                    <Classes
-                    icon={"./images/Crossfit.png"}
-                    title={"CROSSFIT"}
-                    description={"Duis scelerisque montes, libero egestas. Sit nec etiam auctor augue justo. Vel nec vitae."}
-                    />
+            <div className='c_w'>
+                <div className='hero-section'>
+                    <div className='hero'>
+                        <h1 data-animate='slideInLeft' className='animate'>HELPING YOU REACH HIGHER AND <b>ACHIEVE MORE</b></h1>
+                        <p data-animate='slideInRight' className='animate'>Get real results at Zeus with a plan tailored to your needs. Your fitness and health are important to us.</p>
+                        <button data-animate='scale' className='button1 animate'>GET STARTED</button>
+                    </div>
+                    <div className='hero-buttons-container'>
+                        <Classes
+                        icon={"./images/Wrestling.png"}
+                        title={"CLASSES"}
+                        description={"Lacus duis consectetur elementum pharetra, dictumst dictum nulla adipiscing."}
+                        />
+                        <Classes
+                        icon={"./images/PersonalTrainer.png"}
+                        title={"PERSONAL TRAINING"}
+                        description={"Nulla mi bibendum in quis ac turpis sapien massa. Quam turpis tempus ut dolor."}
+                        />
+                        <Classes
+                        icon={"./images/Crossfit.png"}
+                        title={"CROSSFIT"}
+                        description={"Duis scelerisque montes, libero egestas. Sit nec etiam auctor augue justo. Vel nec vitae."}
+                        />
+                    </div>
                 </div>
                 <section className='section-about bc_d1 c_w'>
                     <div className='about-us flx'>

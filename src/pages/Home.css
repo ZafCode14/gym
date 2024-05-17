@@ -26,8 +26,7 @@
 @supports (-webkit-touch-callout: none) {
     .hero-section {
         background-attachment: unset;
-        background-size: auto;
-        background-size: 2400px;
+        background-size: 100% auto;
     }
 } 
 .hero {
