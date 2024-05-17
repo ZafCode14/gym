@@ -17,9 +17,6 @@
 .hero-section {
     background-image: url('../../public/images/hero.jpeg');
     background-position: center 0;
-    background-size: cover;
-    background-attachment: -webkit-fixed;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
