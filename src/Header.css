@@ -16,7 +16,25 @@ header {
     overflow: hidden;
     transition: 1s ease;
 }
-.nav-button-hidden {
+.link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgb(122, 122, 122);
+}
+.nav-buttons .link {
+    padding: 0 30px;
+}
+.nav-buttons .link:hover {
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+}
+.bam:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.nav-hidden .link {
     background-color: rgb(20, 20, 20);
     height: 70px;
     width: 100vw;
@@ -26,11 +44,11 @@ header {
     justify-content: center;
     transition: .4s ease;
 }
-.nav-button-hidden:hover {
+.nav-hidden .link:hover {
     background-color: rgb(34, 34, 34);
     cursor: pointer;
 }
-.bam-hidden {
+.nav-hidden .bam {
     background-color: #F8B833;
     height: 70px;
     width: 100vw;
@@ -40,23 +58,19 @@ header {
     justify-content: center;
     transition: .4s ease;
 }
-.bam-hidden:hover {
+.nav-hidden .bam:hover {
     background-color: rgb(230, 230, 230);
     cursor: pointer;
-}
-.bam-hidden p {
-    color: rgb(19, 19, 19);
 }
 
 .logo {
     display: flex;
     align-items: center;
+    padding: 0 30px;
 }
 .logo img {
     height: 40px;
     position: relative;
-    right: 30px;
-    top: 2px;
 }
 .nav-buttons {
     display: flex;
@@ -79,38 +93,6 @@ header {
     background-color: rgba(36, 36, 36, 0.9);
     cursor: pointer;
 }
-.nav-button {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0 35px;
-    color: rgb(230, 230, 230);
-    border-left: 1px solid rgb(122, 122, 122);
-}
-.nav-buttons .nav-button {
-    font-style: normal;
-    transition: .4s ease;
-}
-.nav-buttons .nav-button:hover {
-    cursor: pointer;
-    background-color: rgb(34, 34, 34);
-}
-.bam {
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin: 0;
-    padding: 0 35px;
-    background-color: #F8B833;
-    color: rgb(19, 19, 19);
-    transition: .4s ease;
-}
-.bam:hover {
-    background-color: rgb(230, 230, 230);
-    cursor: pointer;
-}
 .bars {
     display: none;
 }
@@ -120,11 +102,14 @@ header {
 }
 
 @media(max-width: 1100px) {
-    .nav-buttons .nav-button {
+    .nav-buttons .link {
         display: none;
     }
-    .bam {
-        display: none;
+    .nav-button-hidden .link {
+        border: none;
+    }
+    .nav-button-hidden .bam {
+        border: none;
     }
     .bars {
         display: flex;

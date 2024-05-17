@@ -1,0 +1,91 @@
+.services-container h1 {
+    background-image: url('../../public/images/HeroServices.jpg');
+    background-size: cover;
+    padding: 100px 0 70px 50px;
+    font-size: 50px;
+    line-height: 50px;
+}
+.service-types {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(70, 70, 70);
+    padding: 30px 0;
+    padding-left: 5vw;
+}
+.service-type img {
+    width: 60px;
+}
+.service-type h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+.service-type p {
+    max-width: 90%;
+    width: 250px;
+}
+@media (max-width: 1000px) {
+    .service-type {
+        flex-basis: calc(50% - 2px - 10vw);
+    }
+}
+.services {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-container {
+    display: flex;
+    margin: 20px;
+    border: 1px solid rgb(78, 78, 78);
+    max-width: 1200px;
+}
+.service-container .photo {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.photo_0x01 {
+    background-image: url(../../public/images/photo_0x01.jpg);
+}
+.photo_0x02 {
+    background-image: url(../../public/images/photo_0x02.jpg);
+}
+.photo_0x03 {
+    background-image: url(../../public/images/photo_0x03.jpg);
+}
+.photo_0x04 {
+    background-image: url(../../public/images/photo_0x04.jpg);
+}
+@media (max-width: 750px) {
+    .service-container {
+        flex-direction: column;
+    }
+    .service-container .photo {
+        height: 500px;
+        width: 100%;
+        order: 1;
+    }
+    .service-container .info {
+        order: 2;
+    }
+}
+.service-container .info {
+    flex: 1;
+    padding: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service-container .info p {
+    margin: 10px 0;
+}
+.service-container .info h3 {
+    font-size: 40px;
+}

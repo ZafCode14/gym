@@ -8,11 +8,17 @@
 .c_w {
     color: rgb(230, 230, 230);
 }
+.c_b {
+    color: #141414;
+}
 .bc_d1 {
     background-color: #141414;
 }
 .bc_d2 {
     background-color: #101010;
+}
+.bc_o {
+    background-color: #F8B833;
 }
 .hero-section {
     background-image: url('../../public/images/hero.jpeg');

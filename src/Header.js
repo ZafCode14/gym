@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [isNav, setIsNav] = useState(false);
@@ -12,19 +13,21 @@ function Header() {
         setIsNav(prev => !prev)
     }
 
+    const TopLink = () => window.scrollTo(0, 0);
+
     return (
         <header>
-            <div className='logo'>
+            <Link onClick={TopLink} className='link c_w logo' to={'./'}>
                 <h3 className='name nav-button'>ZEUS</h3>
                 <img src='./images/LightningBolt.png' alt='lightning bolt'/>
-            </div>
+            </Link>
             <div className='nav-buttons'>
-                <h5 className='nav-button'>HOME</h5>
-                <h5 className='nav-button'>SERVICES</h5>
-                <h5 className='nav-button'>CONTACT</h5>
-                <h5 className='nav-button'>ABOUT</h5>
-                <h5 className='nav-button'>SHOP</h5>
-                <h5 className='bam'>BECOME A MEMBER</h5>
+                <Link onClick={TopLink} className='link nav-button c_w' to={'/'}>HOME</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/services'}>SERVICES</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/about'}>ABOUT</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/contact'}>CONTACT</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/shop'}>SHOP</Link>
+                <Link onClick={TopLink} className='link bam c_b bc_o' to={'/become-a-member'}>BECOME A MEMBER</Link>
                 <div onClick={handleNav} className='img-btn bars'>
                     <img src='./images/Menu.png' alt='menue icon'/>
                 </div>
@@ -33,21 +36,12 @@ function Header() {
                 </div>
             </div>
             <div onClick={handleNav} style={navStyle} className='nav-hidden'>
-                <div className='nav-button-hidden'>
-                    <p>HOME</p>
-                </div>
-                <div className='nav-button-hidden'>
-                    <p>SERVICES</p>
-                </div>
-                <div className='nav-button-hidden'>
-                    <p>ABOUT</p>
-                </div>
-                <div className='nav-button-hidden'>
-                    <p>CONTACT</p>
-                </div>
-                <div className='bam-hidden'>
-                    <p>BECOME A MEMBER</p>
-                </div>
+                <Link onClick={TopLink} className='link c_w' to={'/'}>HOME</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/services'}>SERVICES</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/about'}>ABOUT</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/contact'}>CONTACT</Link>
+                <Link onClick={TopLink} className='link c_w' to={'/shop'}>SHOP</Link>
+                <Link onClick={TopLink} className='link bam c_b' to={'/become-a-member'}>BECOME A MEMBER</Link>
             </div>
         </header>
     );
