@@ -1,9 +1,23 @@
-.services-container h1 {
+.services-hero-container {
     background-image: url('../../public/images/HeroServices.jpg');
+    background-position: center;
     background-size: cover;
-    padding: 100px 0 70px 50px;
-    font-size: 50px;
-    line-height: 50px;
+    padding: 200px 0 100px 10vw;
+}
+.services-container h1 {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 1000px;
+}
+@media (max-width: 1000px) {
+    .services-hero-container {
+        padding: 150px 0 100px 10vw;
+    }
+    .services-container h1 {
+        font-size: 60px;
+        line-height: 60px;
+        max-width: 80vw;
+    }
 }
 .service-types {
     display: flex;
@@ -62,12 +76,18 @@
 .photo_0x04 {
     background-image: url(../../public/images/photo_0x04.jpg);
 }
+.photo_0x06 {
+    background-image: url(../../public/images/photo_0x06.jpg);
+}
+.photo_0x07 {
+    background-image: url(../../public/images/photo_0x07.jpg);
+}
 @media (max-width: 750px) {
     .service-container {
         flex-direction: column;
     }
     .service-container .photo {
-        height: 500px;
+        height: 70vw;
         width: 100%;
         order: 1;
     }

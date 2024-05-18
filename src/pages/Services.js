@@ -5,9 +5,11 @@ import Service from '../components/Service';
 
 function Services(props) {
     return (
-        <div className='services-container c_w bc_d2'>
-            <h1>HELPING YOU REACH HIGHER AND <span className='c_o'>ACHIVE MORE</span></h1>
-            <div className='service-types'>
+        <div className='services-container c_w bc_d1'>
+            <div className='services-hero-container'>
+                <h1 data-animate='slideInLeft' className='animate'>HELPING YOU REACH HIGHER AND <span className='c_o'>ACHIVE MORE</span></h1>
+            </div>
+            <div className='service-types bc_d2'>
                 <ServiceType
                 icon={"./images/Spinning.png"}
                 title={"THE RIDE"}

@@ -13,7 +13,10 @@ function Header() {
         setIsNav(prev => !prev)
     }
 
-    const TopLink = () => window.scrollTo(0, 0);
+    const TopLink = () => {
+        window.scrollTo(100, 100);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <header>

@@ -25,10 +25,12 @@ function Service(props) {
     const style2 = {
         order: windowWidth > 750 ? props.order[1] : 2,
     }
+    const slide = props.order[0] === 1 ? "slideInRight" : "slideInLeft"
     return (
-        <div className='service-container'>
+        <div data-animate={slide} className='service-container bc_d2 animate'>
             <div style={style1} className={className}></div> 
             <div style={style2} className='info'>
+                <p className='c_o'>{props.pretitle}</p>
                 <h3>{props.title}</h3>
                 <p>{props.par1}</p>
                 <p>{props.par2}</p>

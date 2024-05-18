@@ -5,34 +5,13 @@ import Energy from '../components/Energy';
 import ShopSection from '../components/ShopSection';
 import LocationSection from '../components/LocationSection';
 import FAQ from '../components/FAQ';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
-    useEffect(() => {
-        const handleScroll = () => {
-            var elem = document.querySelectorAll('.animate');
-            var scrollPos = window.scrollY;
-            var wh = window.innerHeight;
-
-            elem.forEach(function (el) {
-                var isAnimate = el.dataset.animate;
-                var elemOffset = el.offsetTop;
-
-                if (scrollPos > elemOffset - wh + (wh / 8)) {
-                    el.classList.add(isAnimate);
-                }
-            });
-        };
-
-        handleScroll();
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
+    const TopLink = () => {
+        window.scrollTo(100, 100);
+        window.scrollTo(0, 0);
+    }
     return (
         <main>
             <div className='c_w'>
@@ -40,7 +19,7 @@ function Home() {
                     <div className='hero'>
                         <h1 data-animate='slideInLeft' className='animate'>HELPING YOU REACH HIGHER AND <b>ACHIEVE MORE</b></h1>
                         <p data-animate='slideInRight' className='animate'>Get real results at Zeus with a plan tailored to your needs. Your fitness and health are important to us.</p>
-                        <button data-animate='scale' className='button1 animate'>GET STARTED</button>
+                        <Link onClick={TopLink} data-animate='scale' className='button1 link animate' to='/become-a-member'>GET STARTED</Link>
                     </div>
                     <div className='hero-buttons-container'>
                         <Classes
@@ -66,7 +45,7 @@ function Home() {
                             <p className='c_o'>-- WELCOME</p>
                             <h3>DEDICATED TO IGNITING YOUR PASSION FOR HEALTH</h3>
                             <p>Ut magna amet, a malesuada. Nibh in interdum at sem senectus pulvinar aliquam orci. Adipiscing malesuada urna sed urna in nunc volutpat ipsum. Dictumst nunc et velit sed curabitur lobortis viverra sapien.</p>
-                            <button className='button1'>ABOUT US</button>
+                            <Link onClick={TopLink} className='button1 link c_w' to={'/about'}>ABOUT US</Link>
                         </div>
                         <div data-animate='slideInRight' className='photo1 animate'></div>
                     </div>
@@ -78,7 +57,7 @@ function Home() {
                             <p className='c_o'>-- FITNESS CLASS</p>
                             <h3>GET INSIGHT INTO THE CLUB AND LEARN WHAT TO EXPECT</h3>
                             <p>Quisque volutpat a massa ipsum aliquam cursus imperdiet metus. Mauris tellus fermentum ut neque ac tincidunt non odio eget. Tortor pellentesque morbi odio gravida egestas ornare cras. Sem est urna, eget.</p>
-                            <button className='button1'>SERVICES</button>
+                            <Link onClick={TopLink} className='button1 link c_w' to={'/services'}>SERVICES</Link>
                         </div>
                     </div>
                 </section>
@@ -89,7 +68,7 @@ function Home() {
                 <section className="book-section c_w bc_d1">
                     <div className='book-container'>
                         <h2 data-animate='slideInLeft' className='animate'><span className='c_o'>BOOK A SESSION</span> AND START YOUR 7 DAY TRIAL TODAY!</h2>
-                        <button data-animate='scale' className='button1 animate'>GET STARTED</button>
+                        <Link onClick={TopLink} data-animate='scale' className='button1 link animate' to='/become-a-member'>GET STARTED</Link>
                     </div>
                 </section>
             </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function ServiceType(props) {
     return (
-        <div className='service-type'>
+        <div data-animate='scale' className='service-type animate'>
             <img src={props.icon} alt='icon'/>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
