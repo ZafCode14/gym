@@ -4,3 +4,43 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.flx_r {
+  display: flex;
+}
+.flx_c {
+  display: flex;
+  flex-direction: column;
+}
+.jc_c {
+  justify-content: center;
+}
+.jc_e {
+  justify-content: flex-end;
+}
+.jc_s {
+  justify-content: flex-start;
+}
+.jc_sb {
+  justify-content: space-between;
+}
+.jc_sa {
+  justify-content: space-around;
+}
+.ai_c {
+  align-items: center;
+}
+.ai_e {
+  align-items: flex-end;
+}
+.ai_s {
+  align-items: flex-start;
+}
+.ai_sb {
+  align-items: space-between;
+}
+.ai_sa {
+  align-items: space-around;
+}
+.flx1 {
+  flex: 1;
+}

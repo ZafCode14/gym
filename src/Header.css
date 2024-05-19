@@ -25,6 +25,7 @@ header {
     justify-content: center;
     border-left: 1px solid rgb(122, 122, 122);
     overflow: hidden;
+    transition: .4s ease;
 }
 .nav-buttons .link {
     padding: 0 30px;
@@ -33,7 +34,10 @@ header {
     cursor: pointer;
     background-color: rgb(34, 34, 34);
 }
-.bam:hover {
+.bam {
+    background-color: #F8B833;
+}
+.nav-buttons .bam:hover {
     background-color: rgb(230, 230, 230);
     cursor: pointer;
 }
@@ -104,7 +108,7 @@ header {
     cursor: pointer;
 }
 
-@media(max-width: 1100px) {
+@media(max-width: 1000px) {
     .nav-buttons .link {
         display: none;
     }

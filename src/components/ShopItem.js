@@ -10,7 +10,6 @@ function ShopItem(props) {
                 <h5 className='c_o'>{props.price1}<span className='c_w'>{props.price2}</span></h5>
                 <h6>{props.n}</h6>
                 <p>{props.description}</p>
-                <button className='button1'>ADD TO CART</button>
             </div>
         </div>
     );

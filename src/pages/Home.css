@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 @media (min-width: 1700px) {
     .hero-section {
@@ -34,10 +35,11 @@
     }
 }
 .hero {
-    margin-left: 10vw;
-    max-width: 700px;
+    width: 1300px;
+    max-width: 90%;
 }
 .hero h1 {
+    max-width: 700px;
     margin-top: 200px;
 }
 .hero h1 b {

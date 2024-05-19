@@ -29,13 +29,9 @@ function Header() {
                 <Link onClick={TopLink} className='link c_w' to={'/services'}>SERVICES</Link>
                 <Link onClick={TopLink} className='link c_w' to={'/about'}>ABOUT</Link>
                 <Link onClick={TopLink} className='link c_w' to={'/contact'}>CONTACT</Link>
-                <Link onClick={TopLink} className='link c_w' to={'/shop'}>SHOP</Link>
-                <Link onClick={TopLink} className='link bam c_b bc_o' to={'/become-a-member'}>BECOME A MEMBER</Link>
+                <Link onClick={TopLink} className='link bam c_b' to={'/become-a-member'}>BECOME A MEMBER</Link>
                 <div onClick={handleNav} className='img-btn bars'>
                     <img src='./images/Menu.png' alt='menue icon'/>
-                </div>
-                <div className='img-btn shopping-cart'>
-                    <img src='./images/ShoppingCart.png' alt='shopping car icon'/>
                 </div>
             </div>
             <div onClick={handleNav} style={navStyle} className='nav-hidden'>
@@ -43,8 +39,7 @@ function Header() {
                 <Link onClick={TopLink} className='link c_w' to={'/services'}>SERVICES</Link>
                 <Link onClick={TopLink} className='link c_w' to={'/about'}>ABOUT</Link>
                 <Link onClick={TopLink} className='link c_w' to={'/contact'}>CONTACT</Link>
-                <Link onClick={TopLink} className='link c_w' to={'/shop'}>SHOP</Link>
-                <Link onClick={TopLink} className='link bam c_b' to={'/become-a-member'}>BECOME A MEMBER</Link>
+                <Link onClick={TopLink} className='link bam c_b bc_o' to={'/become-a-member'}>BECOME A MEMBER</Link>
             </div>
         </header>
     );

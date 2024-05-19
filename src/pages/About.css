@@ -1,4 +1,5 @@
 .about-hero {
+    width: 100vw;
     background-image: url(../../public/images/hero.jpeg);
     background-size: cover;
     display: flex;
@@ -11,4 +12,7 @@
 }
 .about-page {
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
